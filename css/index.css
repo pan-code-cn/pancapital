@@ -1,0 +1,19 @@
+.body {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+.bottom {
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	transform: translate(-50%, -50%);
+}
+.mailfont{
+	text-decoration:none;
+	color: #06c;
+}
+.bottomfont{
+	font-size: 75%;
+	color: #666;
+}
