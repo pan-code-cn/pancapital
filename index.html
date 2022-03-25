@@ -1,22 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            height: 100vh;
-            background-image: repeating-radial-gradient(600px 600px,black,black,rgb(0, 0, 148),black);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    html {
+      font-size: 10px;
+    }
+
+    body {
+      background-color: rgb(255, 255, 255);
+      height: 6666px;
+    }
+
+    .iphone {
+      border: 4.67rem solid black;
+      width: 82.8rem;
+      border-radius: 13rem;
+    }
+
+    .hair {
+      margin: 0 auto;
+      width: 47.7rem;
+      height: 7rem;
+      background-color: white;
+      border-radius: 0 0 5rem 5rem;
+      background-color: black;
+      z-index: 1000;
+    }
+
+    .screen {
+      position: relative;
+      /* margin: 0 auto; */
+      width: 82.8rem;
+      height: 179.2rem;
+      border-radius: 8.28rem;
+      /* background-color: chocolate; */
+      background-image: url(./src=http___c-ssl.duitang.com_uploads_item_202004_20_20200420103650_xyjkq.jpg&refer=http___c-ssl.duitang.webp);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    footer {
+      width: 78rem;
+      height: 20.8rem;
+      background-color: rgb(255, 244, 144);
+      border-radius: 7.6rem;
+      margin-bottom: 2.4rem;
+      /* display: flex;
+      justify-content: space-between;
+      align-items: center; */
+      padding: 0 4rem;
+      box-sizing: border-box;
+      position: relative;
+      backdrop-filter: saturate(180%) blur(20px);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    section {
+      width: 300px;
+      height: 500px;
+      /* background-color: rgb(153, 153, 255); */
+    }
+
+    /* footer .app{
+      float: left;
+    } */
+    #app1 {
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+      transition-duration: .5s;
+    }
+
+    #app2 {
+      position: absolute;
+      top: 4rem;
+      left: 23rem;
+      transition-duration: .5s;
+    }
+
+    #app3 {
+      position: absolute;
+      top: 4rem;
+      left: 42.2rem;
+      transition-duration: .5s;
+    }
+
+    #app4 {
+      position: absolute;
+      top: 4rem;
+      right: 4rem;
+      transition-duration: .5s;
+    }
+
+    .app {
+      width: 12.8rem;
+      height: 12.8rem;
+      background-color: green;
+    }
+
+    .appradius {
+      border-radius: 3.3rem;
+    }
+
+    /* .screen2 {
+      width: 82.8rem;
+      height: 179.2rem;
+      border-radius: 8.28rem;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      top: -179.2rem;
+    } */
+
+    #app1:hover {
+      width: 82.8rem;
+      height: 179.2rem;
+      border-radius: 8.28rem;
+      background-color: green;
+      transform: translateY(-160rem) translateX(-6.4rem);
+      transition-timing-function: cubic-bezier(0.000, 0.355, 0.435, 1.000);
+    }
+
+    #app2:hover {
+      width: 82.8rem;
+      height: 179.2rem;
+      border-radius: 8.28rem;
+      background-color: green;
+      transform: translateY(-160rem) translateX(-25.4rem);
+      transition-timing-function: cubic-bezier(0.000, 0.355, 0.435, 1.000);
+    }
+
+    #app3:hover {
+      width: 82.8rem;
+      height: 179.2rem;
+      border-radius: 8.28rem;
+      background-color: green;
+      transform: translateY(-160rem) translateX(-44.6rem);
+      transition-timing-function: cubic-bezier(0.000, 0.355, 0.435, 1.000);
+    }
+
+    #app4:hover {
+      width: 82.8rem;
+      height: 179.2rem;
+      border-radius: 8.28rem;
+      background-color: green;
+      transform: translateY(-160rem) translateX(6.4rem);
+      transition-timing-function: cubic-bezier(0.000, 0.355, 0.435, 1.000);
+    }
+  </style>
 </head>
+
 <body>
+  <div class="iphone">
+    <div class="screen">
+      <div class="hair"></div>
+      <header></header>
+      <section></section>
+      <footer>
+        <div class="app dockerapp appradius" id="app1">
+
+        </div>
+        <div class="app dockerapp appradius" id="app2">
+
+        </div>
+        <div class="app dockerapp appradius" id="app3">
+
+        </div>
+        <div class="app dockerapp appradius" id="app4">
+
+        </div>
+      </footer>
+    </div>
+  </div>
 
 </body>
+
 </html>
